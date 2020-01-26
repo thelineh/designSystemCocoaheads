@@ -1,0 +1,6 @@
+framework module Pods_DesignSystemPod_DesignSystemPodTests {
+  umbrella header "Pods-DesignSystemPod-DesignSystemPodTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

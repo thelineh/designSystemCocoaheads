@@ -1,0 +1,12 @@
+platform :ios, '12.0'
+
+target 'DesignSystemPod' do
+  use_frameworks!
+
+  pod 'Nuke', '~> 7.6.0'
+
+  target 'DesignSystemPodTests' do
+    # Pods for testing
+  end
+
+end
