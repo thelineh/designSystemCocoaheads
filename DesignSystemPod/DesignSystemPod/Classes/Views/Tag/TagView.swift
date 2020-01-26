@@ -14,7 +14,7 @@ public class TagView: UIView {
 
     private var textLabel: UILabel
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         self.textLabel = UILabel()
         
         super.init(frame: frame)
@@ -23,7 +23,7 @@ public class TagView: UIView {
         setupConstraints()
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -41,7 +41,7 @@ public class TagView: UIView {
         self.layer.cornerRadius = tagType?.borderRadius ?? 0
     }
     
-    func configure(with type: TagType) {
+    public func configure(with type: TagType) {
         self.tagType = type
         self.textLabel.text = type.title
         self.textLabel.textColor = type.fontColor
