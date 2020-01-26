@@ -21,8 +21,8 @@ class TagViewController : UIViewController {
         //-- Tag
 
         for type in TagType.allCases {
-            let tag = TagView(frame: CGRect(x: 0, y: 0, width: 74, height: 20))
-            tag.configure(for: type)
+            let tag = TagView()
+            tag.configure(with: type)
             stackView.addArrangedSubview(tag)
         }
 
